@@ -41,7 +41,7 @@ def start(_,message):
     
 @bot.on_message(filters.command('help'))
 def help(_,message):
-    message.reply_text('💯 If you want, you can contact us using this format Ex:- /request Hello, I need a help')
+    message.reply_text('💯 If you want, you can contact us using this format \n\n Ex:- /request Hello, I need a help')
 
 @bot.on_message(filters.command("speedtest") & ~filters.edited)
 async def statsguwid(_, message):
