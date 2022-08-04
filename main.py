@@ -37,7 +37,7 @@ def call_back_in_filter(data):
 
 @bot.on_message(filters.command('start'))
 def start(_,message):
-    message.reply_text('🔥𝓗𝓲 𝓣𝓱𝓮𝓻𝓮 , 🤖By Using Our Service You Must Agree To Our Privacy Policy 👀')
+    message.reply_text('🔥𝓗𝓲 𝓣𝓱𝓮𝓻𝓮 ,\n\n✅ 24 Hour Active ✓ \n⚡️ Super Fast Response ✓ \n\nServer  : Heroku\nLibrary : Pyrogram\n\n☘️ Dᴇᴠᴇʟᴏᴘᴇʀ : @MyzoneMy\n\n🤖By Using Our Service You Must Agree To Our Privacy Policy 👀')
     
 @bot.on_message(filters.command('help'))
 def help(_,message):
