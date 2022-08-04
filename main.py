@@ -1,8 +1,6 @@
 from pyrogram import filters , Client
 from pyrogram.types import InlineKeyboardButton , InlineKeyboardMarkup
 import os
-import speedtest
-import wget
 
 bot = Client(
     "notesbot",
