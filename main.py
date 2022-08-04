@@ -25,12 +25,16 @@ def call_back_in_filter(data):
 
 @bot.on_message(filters.command('start'))
 def start(_,message):
-    message.reply_text('Hello there , use /request your ideas - to request')
+    message.reply_text('🔥𝓗𝓲 𝓣𝓱𝓮𝓻𝓮 , 🤖By Using Our Service You Must Agree To Our Privacy Policy 👀')
+    
+@bot.on_message(filters.command('help'))
+def help(_,message):
+    message.reply_text('💯 If you want, you can contact us using this format Ex:- /request Hello, I need a help')
 
 
 @bot.on_message(filters.command('request'))
 def req(_,message):
-    message.reply('Your request have been sent')
+    message.reply('Your request have been sent ✔')
     global req_
     req_ = message.text.replace(message.text.split(' ')[0] , '')
     keyboard = []
@@ -44,12 +48,12 @@ def botreq(_,query):
     result = query.data.split(':')
 
     if result[1] == "accept" and query.from_user.id == owner:
-        bot.send_message(result[2] , "You request has been approved , we will start working on that bot soon")
+        bot.send_message(result[2] , "✔ You request has been approved")
         query.message.edit('Request approved\n\n{}'.format(req_))
 
     elif result[1] == "reject" and query.from_user.id == owner:
-        bot.send_message(result[2] , "Sorry your request has been rejected")
-        query.message.edit('Rejected!')
+        bot.send_message(result[2] , "✘ Sorry your request has been rejected")
+        query.message.edit('✘ Rejected !')
     
     else:
         query.answer('You are not allowed')
