@@ -1,4 +1,2 @@
-pyrogram==1.4.7
+pyrogram
 tgcrypto
-speedtest-cli
-wget
